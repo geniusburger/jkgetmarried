@@ -1,0 +1,3 @@
+
+#cache for 1 day
+Header set Cache-Control "max-age=86400"

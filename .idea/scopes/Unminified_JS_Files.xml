@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Unminified JS Files" pattern="file[jkgetmarried]:src/js/*&amp;&amp;!file:src/js/*.min.js" />
+</component>

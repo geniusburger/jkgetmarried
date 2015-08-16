@@ -1,0 +1,446 @@
+@import 'bootstrap/bootstrap.less';
+@import 'variables.less';
+@import 'font.less';
+@import 'flaticon.less';
+
+body {
+    color: @text-color;
+    background-image: url("../images/tiles/dark--floorboard-wood-background-texture-025.jpg");
+    background-size: 20% auto !important;
+}
+
+.lives {
+    position: fixed;
+    top: @topnav-size;
+    @media (min-width: @grid-float-breakpoint) {
+        top: @topnav-size-hidden;
+    }
+    right: 0;
+    display: inline-block;
+    background-color: @nav-top-background-color;
+    box-shadow: 0 0 10px black;
+    border: 0px transparent;
+    border-radius: 0 0 0 10px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.savethedate {
+    width: 100%;
+    margin: 20px 0px 0px;
+    &.group {
+        margin-left: 20px;
+    }
+}
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: @topnav-size;
+    @media (min-width: @grid-float-breakpoint) {
+        margin-top: @topnav-size-hidden;
+    }
+    img.bottom, svg.bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    background-size: 20% auto !important;
+}
+
+.panelItemSize {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+#bgpanel {
+    div {
+        padding-bottom: 15px;
+    }
+    img {
+        cursor: pointer;
+        .panelItemSize;
+    }
+}
+
+.main {
+    background-color: fadeout(@background-color, 10%);
+    margin-bottom: 25px;
+    padding-bottom: 25px; // padding is required for the internal margins to work correctly
+    box-shadow: 15px 15px 15px fadeout(black, 50%);
+}
+
+a:hover, a:active, a:focus {
+    outline: none;
+}
+
+a.attention {
+    font-size: 200%;
+    font-wight: bold;
+}
+
+.progress {
+    background-color: @progress-color;
+    height: 3px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    background-color: darken(@background-color, 2%);
+}
+
+.navbar-fixed-top {
+    background-color: @nav-top-background-color;
+    border: 0px;
+    margin: 0px;
+    box-shadow: 0px 15px 15px fadeout(black, 50%);
+    @media (min-width: @grid-float-breakpoint) {
+        display: none;
+    }
+}
+
+.icon-bar {
+    background-color: @text-color;
+}
+
+.navbar-toggle {
+    &:hover {
+        @media (min-width: @grid-float-breakpoint) {
+            background-color: @toggle-button-background-color;
+        }
+    }
+    &:active {
+        background-color: @toggle-button-background-color;
+    }
+    line-height: 8px;
+    div {
+        display: inline-block;
+    }
+    .toggle-label span {
+        position: relative;
+        top: -2px;
+    }
+}
+
+.col-md-3 > .sidebar {
+    width: 213px;
+}
+
+.col-md-2 > .sidebar {
+    width: 165px;
+}
+
+.sidebar {
+    background-color: fadeout(@nav-top-background-color, 10%);
+    box-shadow: 15px 15px 15px fadeout(black, 50%);
+    padding-top: 10px;
+}
+
+.section {
+    > h1 {
+        color: @text-heading-color;
+        border-bottom: 1px solid @text-heading-color;
+        padding-top: @h1-top-padding;
+        @media (max-width: @grid-float-breakpoint-max) {
+            padding-top: @affix-top + @h1-top-padding;
+        }
+        margin-top: 0px;
+        font-size: 44px;
+    }
+    @media (min-width: @grid-float-breakpoint) {
+        padding-bottom: @affix-top;
+    }
+}
+
+#banner {
+    overflow: auto;
+    margin-bottom: @top-margin-bottom-size;
+    margin-top: @topnav-size;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    h1 {
+        font-size: 400%;
+        font-weight: bold;
+    }
+    @media (min-width: @grid-float-breakpoint) {
+        margin-top: @topnav-size-hidden;
+    }
+    .brand {
+        background-color: @nav-top-background-color;
+        border: 0px transparent;
+        border-radius: 10px;
+        text-shadow: none;
+        box-shadow: 0 0 10px black;
+        cursor: pointer;
+    }
+}
+
+.affix {
+    top: @affix-top;
+    @media (min-width: @grid-float-breakpoint) {
+        top: @affix-top-hidden;
+    }
+}
+
+.navbar-brand {
+    .brand;
+    &:hover span {
+        @media (min-width: @grid-float-breakpoint) {
+            color: @text-emphasis-color !important;
+        }
+    }
+}
+
+.brand {
+    font-weight: bold;
+    span:nth-child(1) {
+        color: @primary-color;
+    }
+    span:nth-child(2) {
+        color: @secondary-color;
+    }
+}
+
+
+
+.panel {
+    background-color: transparent;
+    margin-top: 15px;
+    .panel-heading a {
+        color: @text-emphasis-color;
+
+        span:after {
+            font-family: 'Glyphicons Halflings';
+            content: "\e113";
+            float: right;
+        }
+
+        &.collapsed span:after {
+            content: "\e114";
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.panel-title {
+    font-weight: bold;
+}
+
+.panel-body {
+    img {
+        max-width: 100%;
+    }
+    h4 {
+        font-weight: bold;
+    }
+}
+
+.panel-heading a:focus {
+    text-decoration: none;
+}
+
+#sideNav > a {
+    float: none;
+}
+
+.border-side(@side; @size; @type; @color) {
+    & when (@side = top) {
+        border-top: @size @type @color;
+    }
+    & when (@side = right) {
+        border-right: @size @type @color;
+    }
+    & when (@side = bottom) {
+        border-bottom: @size @type @color;
+    }
+    & when (@side = left) {
+        border-left: @size @type @color;
+    }
+}
+
+.nav-mixin(@border-side) {
+    > li {
+        & when (@border-side = left) {
+            padding-right: 20px;
+        }
+        & when (@border-side = right) {
+            padding-left: 20px;
+        }
+        > a {
+            color: @text-disabled-color;
+            font-weight: @bold;
+            .border-side(@border-side; @border-size; solid; transparent);
+
+            &:hover,
+            &:focus {
+                color: @text-emphasis-color;
+                background-color: transparent !important;
+                .border-side(@border-side; @border-size; solid; @text-emphasis-color);
+            }
+        }
+    }
+
+    > .active {
+        > a, > a:hover, > a:focus {
+            color: @text-heading-color;
+            .border-side(@border-side; @border-size; solid; @text-heading-color);
+        }
+    }
+}
+
+.topnav {
+    .nav-mixin(bottom);
+}
+
+.sidenav {
+    .nav-mixin(right);
+}
+
+.counter-widget {
+    margin: 0 auto;
+    td {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 25%;
+    }
+    color: @text-disabled-color;
+    .non-zero {
+        font-weight: @bold;
+        color: @text-emphasis-color;
+    }
+    .target-date td {
+        font-size: 30px;
+        color: @secondary-color;
+    }
+}
+
+.counter-data {
+    font-size: 175%;
+}
+
+.test {
+    color: @secondary-color;
+}
+
+.map {
+    margin: 0 auto;
+    display: block;
+}
+
+.paypal {
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid @text-emphasis-color;
+    border-radius: 3px;
+    th {
+        padding: 2px 10px 2px 0px;
+    }
+    td {
+        padding: 2px;
+        &.donate {
+            text-align: right;
+            input {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+#guestBookMessages .message-body {
+    white-space: pre-wrap;
+}
+
+// mailto links
+a[href^="mailto"] {
+    font-weight: bold;
+}
+
+.carousel {
+    img {
+        margin: 0 auto;
+    }
+    .carousel-caption {
+        background-color: fadeout(@background-color, 30%);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        left: 0;
+    }
+}
+
+.panel-jk-primary {
+    .panel-variant(@primary-color; @btn-jk-primary-color; @primary-color; @primary-color);
+}
+
+.panel-jk-secondary {
+    .panel-variant(@secondary-color; @btn-jk-secondary-color; @secondary-color; @secondary-color);
+}
+
+.btn-jk-primary {
+    .button-variant(@btn-jk-primary-color; @btn-jk-primary-bg; @btn-jk-primary-border);
+}
+
+.btn-jk-secondary {
+    .button-variant(@btn-jk-secondary-color; @btn-jk-secondary-bg; @btn-jk-secondary-border);
+}
+
+.btn-rsvp {
+    .btn-jk-secondary;
+}
+
+.btn-guestbook {
+    .btn-jk-secondary;
+}
+
+.btn-honeymoon {
+    .btn-jk-primary;
+}
+
+.btn-map {
+    .btn-jk-primary;
+}
+
+.btn-askus {
+    .btn-jk-primary;
+}
+
+.btn-yes {
+    .button-variant-activeColors(@btn-default-color; @btn-default-bg; @btn-default-border; @btn-success-color; @btn-success-bg; @btn-success-border);
+}
+
+.btn-maybe {
+    .button-variant-activeColors(@btn-default-color; @btn-default-bg; @btn-default-border; @btn-warning-color; @btn-warning-bg; @btn-warning-border);
+}
+
+.btn-no {
+    .button-variant-activeColors(@btn-default-color; @btn-default-bg; @btn-default-border; @btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+
+.btn-beef {
+    .btn-no;
+}
+
+.btn-fish {
+    .button-variant-activeColors(@btn-default-color; @btn-default-bg; @btn-default-border; @btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+
+.btn-veggie {
+    .btn-yes;
+}
+
+.panel-msg {
+    .panel-variant(@nav-top-background-color; @text-color; @nav-top-background-color; @nav-top-background-color);
+}

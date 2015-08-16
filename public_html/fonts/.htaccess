@@ -1,0 +1,6 @@
+
+#compress all
+SetOutputFilter DEFLATE
+
+#cache fonts for 1 year
+Header set Cache-Control "max-age=29030400"

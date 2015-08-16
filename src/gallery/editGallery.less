@@ -1,0 +1,134 @@
+@import url(../less/bootstrap/bootstrap.less);
+
+@background-color: #333;
+@fade-color: fadeout(black ,20%);
+@tile-color: lighten(@background-color, 10%);
+@space: 5px;
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: @background-color;
+    color: white;
+}
+
+table {
+    color: black;
+}
+
+.controls {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tile {
+    padding: @space;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: @tile-color;
+    textarea {
+        width: 100%;
+        margin: @space 0 @space 0;
+        background-color: transparent;
+        border-radius: 4px;
+    }
+    .btn-group {
+        margin: 0 auto @space auto;
+    }
+    .save {
+        width: 100%;
+    }
+    p {
+        overflow: hidden;
+    }
+    img {
+        cursor: pointer;
+        cursor: -webkit-zoom-in;
+        cursor: -moz-zoom-in;
+    }
+    &.new {
+        border: solid red 1px;
+        .indicator {
+            display: inline-block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.indicator {
+    text-align: center;
+    color: red;
+    display: none;
+    cursor: pointer;
+}
+
+.status-wrapper {
+    display: inline;
+    margin-left: 15px;
+}
+
+#status {
+    display: inline-block;
+    font-size: 150%;
+    vertical-align: middle;
+    &.error {
+        color: red;
+    }
+    &.success {
+        color: green;
+    }
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: @fade-color;
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+    cursor: -moz-zoom-out;
+    z-index: 3;
+}
+
+#wrapper, #header, #title, #zoom, #footer {
+    position: absolute;
+}
+
+#header, #title, #zoom {
+    top: 0px;
+}
+
+#title, #zoom {
+    background-color: @fade-color;
+    padding: 0px 4px 2px;
+}
+
+#title {
+    left: 0px;
+    border-bottom-right-radius: 4px;
+}
+
+#zoom {
+    right: 0px;
+    border-bottom-left-radius: 4px;
+}
+
+#footer {
+    bottom: 0px;
+    background-color: @fade-color;
+    padding: 0px 4px;
+    text-align: center;
+}
+
+.btn-show {
+    .button-variant-activeColors(@btn-default-color; @btn-default-bg; @btn-default-border; @btn-success-color; @btn-success-bg; @btn-success-border);
+}
+
+.btn-hide {
+    .button-variant-activeColors(@btn-default-color; @btn-default-bg; @btn-default-border; @btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}

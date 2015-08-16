@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Josh and Kelly</title>
+    <link rel="stylesheet" href="css/main.css?v=3">
+    <link rel="icon" type="image/ico" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/ico64.png"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/master.min.js"></script>
+    <!--<script src="../src/js/loadOrder.js"></script>-->
+</head>
+
+<body data-spy="scroll" data-target=".navSpy">
+<noscript>
+    <h1>WARNING: This page requires <cite>javascript</cite> to function properly!</h1>
+    <h1>Please enable javascript and refresh the page.</h1>
+</noscript>
+<div class="bg" data-speed-divisor="5">
+    <img src="images/leaves-with-bg-m.jpg" width="100%">
+    <!--<img class="bottom" src="images/grass-green-with-bg-m.svg" width="100%">-->
+    <svg width="100%" height="100%" preserveAspectRatio="xMinYMax meet" viewBox="0 0 1920 500" class="bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <mask id="grassTopMask">
+                <image xlink:href="images/grass-green-alpha-channel.png" width="100%" height="100%"></image>
+            </mask>
+        </defs>
+        <image mask="url(#grassTopMask)" id="grassBgImage" xlink:href="images/grass-green-with-bg-m.jpg" width="100%" height="100%"></image>
+    </svg>
+</div>
+<header class="navbar navbar-fixed-top" id="top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <div class="toggle-label">
+                    <span>MENU</span>
+                </div>
+                <div>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+            </button>
+            <a href="#" class="navbar-brand"><span>J</span><span>K</span></a>
+        </div>
+        <nav class="navbar-collapse collapse navSpy" role="navigation">
+            <ul class="nav navbar-nav topnav" id="topList">
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="banner">
+    <h1><span class="brand"><span>J</span><span>K</span></span> Get Married</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="hidden-xs hidden-sm col-md-3">
+            <div class="sidebar" id="sideNav" role="complementary">
+                <a href="#" class="navbar-brand"><span>J</span><span>K</span></a>
+                <div class="navSpy hidden-print">
+                    <ul class="nav sidenav" id="sideList" data-clampedwidth=".sidebar">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 main" role="main">
+            <!--<div class="section demos">-->
+                <!--<h1 id="demo" class="page-header">Demo</h1>-->
+                <!--<form class="form-inline" role="form">-->
+                    <!--<div class="form-group">-->
+                        <!--<input type="number" class="form-control" id="speedinput" placeholder="0 - inf">-->
+                    <!--</div>-->
+                    <!--<button type="submit" class="btn btn-primary" id="speedbutton">Set Scrolling Divisor</button>-->
+                    <!--<div class="panel panel-primary">-->
+                        <!--<div class="panel-heading">-->
+                            <!--<a data-toggle="collapse" href="#bgpanel" class="collapsed">-->
+                                <!--<h4 class="panel-title">-->
+                                    <!--Background Tiles-->
+                                    <!--<span class="status"></span>-->
+                                <!--</h4>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div id="bgpanel" class="panel-collapse collapse">-->
+                            <!--<div class="panel-body"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+            <div class="section">
+                <h1 id="savethedate" class="page-header"><span class="flaticon-chicken18"></span>Save The Date</h1>
+                <table class="counter-widget">
+                    <tr class="target-date">
+                        <td colspan="4" class="text-center">-</td>
+                    </tr>
+                    <tr class="counter-label">
+                        <td class="text-center">Days</td>
+                        <td class="text-center">Hours</td>
+                        <td class="text-center">Minutes</td>
+                        <td class="text-center">Seconds</td>
+                    </tr>
+                    <tr class="counter-data">
+                        <td class="text-center">-</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center">-</td>
+                        <td class="text-center">-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+                                     aria-valuemax="59" style="width: 100%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <img class="savethedate" src="images/savethedate4x6front.jpg">
+                <p>
+                    <span>High Res Front: </span>
+                    <a href="images/savethedate4x6front.png" target="_blank">PNG</a>
+                    <span> | </span>
+                    <a href="images/savethedate4x6front_hd.jpg" target="_blank">JPG</a>
+                    <span class="savethedate group">High Res Back: </span>
+                    <a href="images/savethedate4x6back.png" target="_blank">PNG</a>
+                    <span> | </span>
+                    <a href="images/savethedate4x6back_hd.jpg" target="_blank">JPG</a>
+                </p>
+            </div>
+            <div class="section">
+                <h1 id="faqs" class="page-header"><span class="flaticon-bouquet1"></span>FAQs</h1>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel">
+                        <h4 class="panel-title">How do we get there?</h4>
+                        <div class="panel-body">
+                            <p>While we don’t recommend walking, you should probably start no later than late May and pack lots of sunscreen, a tent, and water.</p>
+                            <p>If you are driving, Google gives great directions. Start by putting in your address and then make Joseph, Oregon your destination. </p>
+                            <p>If you are flying, Walla Walla Airport is the closest to Joseph, about 2.5 hours away. Obviously at this distance renting a car is a must. The next airport is Boise (a little over 4 hours), then Portland (about 5.5 hours). </p>
+                            <p>There are smaller regional airports similar to Walla Walla in Lewiston, ID and the Tri Cities area, OR. Just like with Walla Walla, there are no direct flights and you will have to fly into Portland, Seattle, or Boise and catch a connecting flight to one of them. Kelly flies with Alaska Airlines and has never had a bad experience.</p>
+                            <p>Don’t forget your rental car! Book this at the same time you are booking your hotel and flights. You want to make sure you have a way to get there as well as a place to stay.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="panel-title">Where can we stay?</h4>
+                        <div class="panel-body">
+                            <p>There is a lot of lodging in Joseph, everything from vacation rentals at the lake to motels to B&amp;Bs. However, if you are planning on coming, we recommend booking as soon as possible as some places are already completely booked. </p>
+                            <p>The next town over is Enterprise, you can find some accommodations there as well. If you are having trouble deciding or finding a place, give Kelly or Karen a call and we’d be happy to help you find something.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="panel-title">Where is the wedding?</h4>
+                        <div class="panel-body">
+                            <p>For the day of the wedding, you will need to travel to 60685 Liberty Road, Joseph, Oregon 97846. If you feel like you’ve gone too far (up Liberty) and you haven’t hit the cattle guard or gone over the creek, keep driving. Don’t worry, you won’t be able to miss us, we’ll have decorations out at the end of the driveway, which will be on your left. Please look at a map or cache the one on your phone before heading out of town, cell reception is spotty.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="panel-title">What is there to do around town?</h4>
+                        <div class="panel-body">
+                            <h4>Drinks and Food</h4>
+                            <p>There are three breweries in the area (all of which have food):</p>
+                            <ol>
+                                <li><a href="http://www.yelp.com/biz/terminal-gravity-brewing-enterprise?osq=beer" target="_blank">Terminal Gravity Brewing</a>-Enterprise</li>
+                                <li><a href="http://www.yelp.com/biz/mutiny-brewing-company-joseph?osq=beer" target="_blank">Mutiny Brewing Company</a>-Joseph</li>
+                                <li><a href="http://www.yelp.com/biz/embers-brew-house-joseph?osq=beer" target="_blank">Embers Brew House</a>-Joseph</li>
+                            </ol>
+                            <p>There is also Lathrop Country Wines in Joseph and just down Main Street from Kelly’s favorite breakfast spot, <a href="http://www.yelp.com/biz/red-horse-coffee-joseph" target="_blank">Red Horse Coffee</a> (their savory corncake is divine!), is <a href="http://www.yelp.com/biz/stein-distillery-inc-joseph" target="_blank">Stein Distillery</a>.</p>
+                            <p>Other spots to catch a bite to eat are <a href="http://www.yelp.com/biz/cocos-grill-and-beech-18-bar-joseph">Coco’s Grill and Beech 18 Bar</a> and <a href="http://www.yelp.com/biz/outlaw-restaurant-and-saloon-joseph?osq=beer">The Outlaw</a>.</p>
+                            <h4>Shopping and Galleries</h4>
+                            <p>There are a few art galleries, a statue garden, and many cute shops to walk around in. Don’t forget to stop by <a href="http://www.yelp.com/biz/arrowhead-chocolates-joseph?osq=chocolates" target="_blank">Arrowhead Chocolates</a> for some delicious truffles and a hazelnut milk chai.</p>
+                            <h4>Recreation</h4>
+                            <p>For the more adventurous, there are kayak, paddleboard, canoe, and rowboat <a href="http://wallowalakemarina.com/" target="_blank">rentals</a> at Wallowa Lake. There are also many hiking trails in the Eagle Cap Wilderness. </p>
+                            <p>Craving something a little more thrilling? Take a ride up the <a href="http://wallowalaketramway.com/rates/summer-at-the-tram/" target="_blank">Wallowa Lake Tramway</a> on a 3700 vertical foot ascent to the top of Mt. Howard.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="panel-title">What do I wear?</h4>
+                        <div class="panel-body">
+                            <h4>Wear This: Comfy and Classy</h4>
+                            <p>(although heels are strongly discouraged)</p>
+                            <img src="images/wearthis.jpg">
+                            <h4>…Not That: Too Formal and Stuffy</h4>
+                            <img src="images/notthat.jpg">
+                            <h4>…Or That: Wrong Time of Year</h4>
+                            <img src="images/orthat.jpg">
+                            <p>Basically we want you to be comfortable but keep it classy for the wedding. Any other time you can get down with your bad self, like Raj here who does a mean Catwoman.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="panel-title">Are you registered?</h4>
+                        <div class="panel-body">
+                            <p>Yes we are, although your presence is more than enough.</p>
+                            <p>If you do feel so inclined, registry info can be found <a href="#registry" class="smooth">here</a> (there is also a link in our navigation menu). As we already have a fully furnished home, the registry is quite small. For another way to contribute, we have set up a honeymoon fund to help us make our Seattle honeymoon just a little bit more special.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="panel-title">What if I drink too much and stumble off into the woods?</h4>
+                        <div class="panel-body">
+                            <p>You will probably be eaten by wolves and mountain lions. At the same time.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="panel-title">Have any other questions?</h4>
+                        <div class="panel-body">
+                            <p>You can email us using the link at the bottom of the page or just give us a call.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="section">-->
+                <!--<h1 id="ceremony" class="page-header"><span class="flaticon-bell53"></span>Ceremony</h1>-->
+                <!--<p>The ceremony will take place in <strong>Joseph, OR</strong> at <strong>Wallowa Lake</strong>.</p>-->
+                <!--<p>-->
+                    <!--<a href="https://www.google.com/maps/place/Wallowa+Lake+State+Park/@45.276618,-117.2122607,788a,20y,41.24t/data=!3m1!1e3!4m2!3m1!1s0x0:0xea30f5f448bc8b4a?hl=en-US" target="_blank" class="btn btn-map hidden-sm hidden-md hidden-lg">Google Map</a>-->
+                    <!--<iframe class="map hidden-xs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787.7335724445293!2d-117.2122607310885!3d45.27661800648381!2m3!1f0!2f41.240909871975134!3f0!3m2!1i1024!2i768!4f20!3m3!1m2!1s0x0%3A0xea30f5f448bc8b4a!2sWallowa+Lake+State+Park!5e1!3m2!1sen!2sus!4v1412371064958" width="600" height="450" frameborder="0" style="border:0"></iframe>-->
+                <!--</p>-->
+            <!--</div>-->
+            <div class="section">
+                <h1 id="reception" class="page-header"><span class="flaticon-champagne7"></span>Ceremony &amp; Reception</h1>
+                <p>The reception will be held immediately following the ceremony at <strong>Karen and Bob's house</strong>.</p>
+                <p><strong>60685 Liberty Rd, Joseph, OR 97846</strong>.</p>
+                <p>
+                    <a href="https://www.google.com/maps/place/60685+Liberty+Rd,+Joseph,+OR+97846/@45.2801338,-117.1535023,836a,20y,41.2t/data=!3m1!1e3!4m2!3m1!1s0x54a405ebbf305005:0x13bd8d95824fd87b?hl=en-US" target="_blank" class="btn btn-map hidden-sm hidden-md hidden-lg">Google Map</a>
+                    <iframe class="map hidden-xs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.7150917373365!2d-117.15350229569935!3d45.28013379479017!2m3!1f0!2f41.19551908978104!3f0!3m2!1i1024!2i768!4f20!3m3!1m2!1s0x54a405ebbf305005%3A0x13bd8d95824fd87b!2s60685+Liberty+Rd%2C+Joseph%2C+OR+97846!5e1!3m2!1sen!2sus!4v1412371292108" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                </p>
+            </div>
+            <div class="section">
+                <h1 id="aboutus" class="page-header"><span class="flaticon-camera97"></span>Josh and Kelly</h1>
+                <p>We are humans. We have cats.</p>
+                <div id="gallery" class="carousel slide" data-ride="carousel">
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#gallery" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#gallery" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="section">
+                <h1 id="registry" class="page-header"><span class="flaticon-gift69"></span>Registry & HoneyFund</h1>
+                <p>We registered with <a class="attention" href="http://smile.amazon.com/registry/wedding/2HJQEWTVIWGU6" target="_blank">Amazon</a>. If you purchase something elsewhere, please make sure to go back and mark it as purchased on Amazon to avoid duplicates.</p>
+                <p>As we already have a fully furnished home, the registry is quite small. For another way to contribute, we have set up a honeymoon fund to help us make our Seattle honeymoon just a little bit more special.</p>
+                <div id="donatePanel" class="panel panel-jk-secondary">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#donateBody">
+                            <h4 class="panel-title">
+                                Give to the Honeymoon Fund
+                                <span class="status"></span>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="donateBody" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <form class="form-horizontal" role="form" target="_blank" name="_xclick" action="https://www.paypal.com/us/cgi-bin/webscr" method="post">
+                                <input type="hidden" name="cmd" value="_xclick">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="hidden" name="item_name" value="Josh and Kelly's Honeymoon">
+                                <input type="hidden" name="on0" value="Name">
+                                <div class="form-group">
+                                    <label for="yourName" class="col-sm-2 control-label">Your Name</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" name="os0" maxlength="30" required id="yourName" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="honeymoonAmount" class="col-sm-2 control-label">Gift Amount</label>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">$</span>
+                                            <input id="honeymoonAmount" type="number" name="amount" min="1" max="99999" step="1" class="form-control" placeholder="0" required>
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-3">
+                                        <button type="submit" class="btn btn-honeymoon">Give using PayPal</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="section">-->
+                <!--<h1 id="rsvp" class="page-header">RSVP</h1>-->
+                <!--<p><strong>Please RSVP by May 1, 2015!</strong></p>-->
+                <!--<form class="form-horizontal" role="form" name="rsvp">-->
+                    <!--<input type="hidden" name="action" value="rsvp">-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="rsvpName" class="col-sm-2 control-label">Your Name</label>-->
+                        <!--<div class="col-sm-6">-->
+                            <!--<input type="text" class="form-control" name="name" maxlength="200" required id="rsvpName" placeholder="Your Name">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="going" class="col-sm-2 control-label">Are you going?</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<div class="btn-group" data-toggle="buttons" id="going">-->
+                                <!--<label class="btn btn-yes active">-->
+                                    <!--<input type="radio" name="going" id="goingYes" value="yes" checked>Yes-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-maybe">-->
+                                    <!--<input type="radio" name="going" id="goingCeremony" value="ceremony">Ceremony Only-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-no">-->
+                                    <!--<input type="radio" name="going" id="goingNo" value="no">No-->
+                                <!--</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="food" class="col-sm-2 control-label">Food</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<div class="btn-group" data-toggle="buttons" id="food">-->
+                                <!--<label class="btn btn-beef active">-->
+                                    <!--<input type="radio" name="food" id="foodBeef" value="beef" checked>Beef-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-fish">-->
+                                    <!--<input type="radio" name="food" id="foodFish" value="fish">Fish-->
+                                <!--</label>-->
+                                <!--<label class="btn btn-veggie">-->
+                                    <!--<input type="radio" name="food" id="foodVeggie" value="veggie">Vegetarian-->
+                                <!--</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="rsvpNote" class="col-sm-2 control-label">Message</label>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<textarea rows="3" class="form-control" id="rsvpNote" name="message" placeholder="Optional message"></textarea>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<div class="col-sm-offset-2 col-sm-10">-->
+                            <!--<button type="submit" name="submit" class="btn btn-rsvp">RSVP</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+            <div class="section">
+                <h1 id="guestBook" class="page-header"><span class="flaticon-balloon11"></span>Guest Book</h1>
+                <div id="signPanel" class="panel panel-jk-secondary">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#signBody" class="collapsed">
+                            <h4 class="panel-title">
+                                Sign The Guestbook
+                                <span class="status"></span>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="signBody" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <form class="form-horizontal" role="form" name="sign">
+                                <input type="hidden" name="action" value="sign">
+
+                                <div class="form-group">
+                                    <label for="signName" class="col-sm-2 control-label">Your Name</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="name" maxlength="200" required id="signName" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="guestBookNote" class="col-sm-2 control-label">Message</label>
+                                    <div class="col-sm-10">
+                                        <textarea rows="5" name="message" class="form-control" id="guestBookNote"
+                                                  placeholder="Write message here" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" name="submit" class="btn btn-guestbook">Sign</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="guestBookMessages"></div>
+            </div>
+            <div class="section">
+                <h1 id="questions" class="page-header"><span class="flaticon-heart312"></span>Questions</h1>
+                <p>
+                    Have a question? <button type="button" id="askus" class="btn btn-askus">Ask Us</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

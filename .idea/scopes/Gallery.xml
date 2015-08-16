@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Gallery" pattern="file[jkgetmarried]:public_html/images/gallery/*" />
+</component>

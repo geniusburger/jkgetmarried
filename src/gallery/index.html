@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link href="/src/gallery/editGallery.css?v=1" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="../../public_html/images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../../public_html/images/ico64.png"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="/src/js/3p/jquery-1.11.0.min.js"></script>
+    <script src="/src/js/util.js"></script>
+    <script src='/src/gallery/editGallery.js'></script>
+</head>
+
+<body>
+<noscript>
+    <h1>WARNING: This page requires <cite>javascript</cite> to function properly!</h1>
+    <h1>Please enable javascript and refresh the page.</h1>
+</noscript>
+<div class="container">
+    <div class="row controls">
+        <div class="col-xs-12">
+            <button type="button" id="refresh" class="btn btn-primary">Refresh</button>
+            <button type="button" id="scan" class="btn btn-info">Scan</button>
+            <div class="status-wrapper">
+                <img id="progress" src="/src/gallery/progress.gif">
+                <span id="status"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="images">
+    </div>
+</div>
+
+<div id="popup" style="display: none;">
+    <div id="wrapper">
+        <div id="header">
+            <span id="title"></span>
+            <span id="zoom"></span>
+        </div>
+        <img id="img">
+        <div id="footer">
+            <span id="caption"></span>
+        </div>
+    </div>
+</div>
+
+<script src="/src/js/3p/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="BG Tiles" pattern="file[jkgetmarried]:public_html/images/tiles/*" />
+</component>

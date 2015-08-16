@@ -1,0 +1,43 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/js/util.min.js" />
+        <item url="file://$PROJECT_DIR$/src/gallery/editGallery.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/3p/bootstrap.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/countdownTimer.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/main.min.js" />
+        <item url="file://$PROJECT_DIR$/src/node/generateGallery.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/js/master.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/3p/jquery-1.11.0.min.js" />
+        <item url="file://$PROJECT_DIR$/src/node/generateBg.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/loadOrder.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/bg.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/game.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/gallery.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/node/generateGallery.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/src/node/generateBg.min.min.min.js" />
+      <root url="file://$PROJECT_DIR$/src/node/generateGallery.min.min.js" />
+      <root url="file://$PROJECT_DIR$/src/node/generateBg.min.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/js/master.min.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/js/bg.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/util.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/countdownTimer.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/main.min.js" />
+      <root url="file://$PROJECT_DIR$/src/node/generateGallery.min.js" />
+      <root url="file://$PROJECT_DIR$/src/node/generateBg.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/loadOrder.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/bg.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/game.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/gallery.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/3p/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/src/gallery/editGallery.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/js/master.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/3p/jquery-1.11.0.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

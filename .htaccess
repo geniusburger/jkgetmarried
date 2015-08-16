@@ -1,0 +1,10 @@
+
+AddHandler application/x-httpd-php55  .php55 .php
+
+#compress all text & html:
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+
+<Files "*.ini">
+order deny,allow
+deny from all
+</Files>
